@@ -1,0 +1,65 @@
+Todo 
+
+- see version control.
+- options menu - toggle FPS by setting bool debug in scene_game.
+- look into loading issue at start. check if adding splash screen will help. look into loading period.
+- Check for any division and see if it can be multiplied instead
+- Cut height of lanes down. May need to likewise tweak sprites. Have enough space here that button(s) and score can be displayed / easily seen and not interefer with game
+- Change all art assets using spirte illumator. (possibly a light/dark theme option?). Also, see plugin for corona.
+- Add in points system which writes to user.json - partially done - points value added but not currently doing anything.
+- Check into what I need to do to use "android.permission.GET_ACCOUNTS"
+- change content rating in store listing at google play to include EULA - upload to couch gaming
+- plugin.gpgs: this is the google pay games service. use this for achievements / etc. https://coronalabs.com/blog/2013/06/25/tutorial-introducing-google-play-game-services/
+- facebook plugin?
+- encrypt JSON file to prevent tampering (openSSL) - https://coronalabs.com/blog/2013/06/11/tutorial-using-the-openssl-plugin/
+- add in some sort of end of upgrade reward?
+- powerups
+- more powerups
+- enemies strike as well
+- 2-play head to head
+- mute button either on pause option or it's own widget
+- implement Firebase for better advertising / analytics = https://github.com/scottrules44/firebase-demo
+
+Sites
+=================
+
+https://coronalabs.com/blog/2013/06/18/guest-tutorial-delta-time-in-corona/ - Delta Time
+https://docs.coronalabs.com/guide/basics/optimization/index.html - Optimization
+https://play.google.com/store/apps/details?id=com.couch_gaming.ninjavspirates
+https://play.google.com/apps/publish/?dev_acc=05091637425994101463#AppDashboardPlace:p=com.couch_gaming.ninjavspirates
+https://apps.admob.com/?hl=en&_ga=1.226448850.959842947.1483415446#account/appmgmt:
+https://www.appodeal.com/apps
+https://console.firebase.google.com/project/ninja-vs-pirates-free-to-play/analytics/app/android:com.couch_gaming.ninjavspirates/overview?hl=en_US
+
+
+hackintosh - OSX shit for iphone.
+
+I really think your best choise is C# with Xamarin
+
+
+Lufia & Beef's movie list
+--------------
+Momento
+12 Monkey's
+Eternal Sunshine of the Spotless Mind
+The Thin Red Line
+Interstellar
+Rushmore
+Me and You and everyone we know
+Thumbsucker
+The Squid and the Whale
+Art School Confidential
+Broken Flowers
+Bottle Rocket
+The Savages
+The Darjeeling Limited
+The Life Aquatic With Steve Zissou
+The Fountain
+The Brass teapot
+Revolver
+(Check out) Code 36
+Time Travelers Wife
+L.A. Confidential
+The Imaginarium of Doctor Parnassus
+Magnolia
+Mr. Lonely

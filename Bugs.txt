@@ -1,0 +1,26 @@
+Bugs
+136 appodeal
+168 admob
+
+149
+231
+
+190
+231
+
+207
+320
+
+--- Samsung S5 ---
+
+- transition screen after game over isn't exactly smooth on s5 apparently (can someone else confirm?).
+- re-do icon with 'free' being different somehow.
+
+Yes, delta time is super handy for moving things.
+But I'm a little confused as to why that tutorial recommends (effectively) adding a * 60 or * 30.
+Delta time is typically measured in seconds so you can do math in real units(edited)
+manpat - Today at 9:01 AM
+Like box:translate( 0, 5.0*dt ) with the typical dt would move the box 5px every second.
+All the factors in the tutorial do is make math less clear.
+Like, the above with the /(1000/60) would just move the box 300px/s rather than 5px/s. 
+It still just as framerate independent, but now there's an arbitrary factor in there making things harder

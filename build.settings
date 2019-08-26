@@ -1,0 +1,75 @@
+-- -----------------------------------------------------------------------------------
+-- FILE: build.settings
+-- DESCRIPTION: Sets various parameters for the targeted device(s)
+-- -----------------------------------------------------------------------------------
+
+-- Supported values for orientation:
+-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+settings = 
+{
+	orientation = 
+	{
+		default = "landscapeLeft", 
+		supported = { "landscapeLeft", "landscapeRight" },
+	},
+	
+	android =
+    {
+        usesPermissions =
+        { 
+            -- Targeted ads
+            "android.permission.INTERNET",
+            "android.permission.ACCESS_NETWORK_STATE",
+            "android.permission.ACCESS_COARSE_LOCATION",
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+        },
+
+        -- More memory. pay attention to this
+        -- largeHeap = true
+    },
+	
+	iphone =
+	{
+		plist =
+		{			
+			UIStatusBarHidden=true,
+			UIViewControllerBasedStatusBarAppearance = false,
+			UIApplicationExitsOnSuspend = false,
+			UIPrerenderedIcon = true, 
+			CFBundleIconFiles = {
+                "Icon.png",
+                "Icon@2x.png",
+                "Icon-60.png",
+                "Icon-60@2x.png",
+                "Icon-60@3x.png",
+                "Icon-72.png",
+                "Icon-72@2x.png",
+                "Icon-76.png",
+                "Icon-76@2x.png",
+                "Icon-167.png",
+                "Icon-Small-40.png",
+                "Icon-Small-40@2x.png",
+                "Icon-Small-50.png",
+                "Icon-Small-50@2x.png",
+                "Icon-Small.png",
+                "Icon-Small@2x.png",
+                "Icon-Small@3x.png"			},
+		},
+	},
+
+	plugins =
+    {
+        -- Ad networks
+        ["plugin.appodeal"] =
+        {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = { iphone=false, android=true, ["android-kindle"]=true, appletvos=false }
+        },
+
+        ["plugin.gpgs"] =
+        {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = { iphone=false, android=true }
+        },
+    },
+}

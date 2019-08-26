@@ -1,0 +1,88 @@
+changelog
+
+v1.0.14 - Ad revision, Version Control, Animation and Future Features [BETA]
+-----------
+- Added a new property to user for ad counter.
+- Ads will now display less-frequently. Enjoy :D
+- Added tutorial property - This will be used in an upcoming patch for (guess what?) a tutorial.
+- Added version property.
+- Implemented version control for ease of adding in new properties in the future (thanks Grim).
+- Added rotation to ninja stars (delta-time). 
+- New property 'kills' added and initial implementation.
+- Skins table implemented, more prep for v1.1.
+
+v1.0.13 - Ad removal and final pre-delta-time preperation.
+-----------
+- Removed ad from onPause event (pause button). Meant to do this earlier. It annoyed me too.
+- Changed to 60 FPS - reflected all prior code to this change. Final preperations for full delta-time integration.
+  NOTE: This build may perform poorly on older devices. Next build will fix this.
+- Removed several pieces of redundant code in place from early delta-time work.
+- Reworked structure in several places to eliminate unnecessary function work.
+- New FPS function added to run seperately from delta and rounded number.
+
+
+v1.0.12 - Performance - General Code Cleanup
+-----------
+- Removed unused forward declare.
+- Further optimization changes throughout program in preperation of delta time. Some users may notice a small performance increase.
+- Added toggle for display of FPS - Future release will have this in options menu (also not running nearly as fast as it is currently). 
+
+v1.0.11 - Partial delta time support
+-----------
+- Initial framework laid for delta time
+- Changed FPS counter for testing purpose (Yes, it's supposed to update VERY quickly. This is intentional for my own testing.)
+
+v1.0.10 - Animation Edit - Performance Change
+-----------
+- Changed player hit animation. Should be more noticeable
+- Revised java stack size - this may take a performance hit. Testing needed.
+- Added FPS meter for beta testing.
+
+v1.0.9 - Menu Addition
+-----------
+- Added version number on main menu.
+
+v1.0.8 - Final known bugfix and HUGE performance upgrade
+-----------
+- Converted several files to wav.
+- Stereo to mono on several sound effects for optimization.
+- Normalized all audio.
+- Changed all audio to 22k Hz.
+- Fixed audio bug.
+- Optimized load and memory storage - should be running and initializing far quicker across all platforms.
+
+v1.0.7 - Performance
+-----------
+- Enabled largeHeap in build.settings. This should vastly improve performance across all android devices.
+
+v1.0.6 - Beginning of asset enhancements
+-----------
+- Icon that displays on 'desktop' modified. NEEDS FIXED: https://docs.coronalabs.com/guide/distribution/buildSettings/index.html#androidsettings
+- Back-end work on website icons.
+
+v1.0.5 - Performance Boost
+-----------
+- Additional noticable performance gain by destroying main menu scene upon loading main game scene.
+  NOTE: While you will see a slight stutter switching scenes, this allows for a lot more memory to be used in the actual game scene.
+
+v1.0.4 - Various
+-----------
+- Added instantiated ad to pause button.
+- Tweaked what occurs prior to swapping to make transitions smother.
+- [N/A but still useful knowledge]: Created poll on twitter (lasting two days). Static or skippable-video ads?
+
+v1.0.3 - Refinement
+-----------
+- Refined ad network further. Final revision.
+- Adjusted poof animation for more tolerence.
+- Removed erroneous code that compiled anyhow.
+- Removed unnecessary permission.
+
+v1.0.2 - Bugfixes
+-----------
+- Samsung s5 (possibly others) poof animation glitch corrected.
+- Poofs should now properly disappear when two are created simultaneously.
+
+v1.0.1 - Ad change
+-----------
+- Made ad network a little more dynamic (user feedback positive)
